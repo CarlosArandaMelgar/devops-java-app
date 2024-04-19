@@ -6,12 +6,10 @@ pipeline{
     stages{
         stage('Git Checkout'){
             steps{
-                script{
                     gitCheckout(
                         branch: "main",
                         url: "https://github.com/CarlosArandaMelgar/devops-java-app.git"
                     )
-                }
             }
         }
     }
