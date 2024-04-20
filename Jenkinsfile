@@ -15,7 +15,9 @@ pipeline{
         stage('Unit Test Maven'){
             steps{
                    script{
-                    mvnTest()
+                    dir('mrdevops_java_app'){
+                        mvnTest()
+                    }
                    }
             }
         }
