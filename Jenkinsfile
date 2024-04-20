@@ -15,7 +15,7 @@ pipeline{
         stage('Unit Test Maven'){
             steps{
                    script{
-                    dir('mrdevops_java_app'){
+                     dir('/var/lib/jenkins/workspace/CICD-java-app/mrdevops_java_app'){
                         mvnTest()
                     }
                    }
