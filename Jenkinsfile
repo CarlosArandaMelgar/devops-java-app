@@ -15,6 +15,7 @@ pipeline{
         stage('Unit Test Maven'){
             steps{
                    script{
+                        sh pwd
                         mvnTest()
                    }
             }
